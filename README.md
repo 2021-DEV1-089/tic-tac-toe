@@ -14,7 +14,7 @@ cd tic-tac-toe
 npm install
 npm start
 ```
-navigate to `http://localhost:8000` on your browser.
+navigate to `http://localhost:3000` on your browser.
 
 Note: Node and npm need to be installed. Learn more on how to install it [here](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 
