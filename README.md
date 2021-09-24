@@ -1,6 +1,6 @@
 # Tic Tac Toe
 
-A React Web app made with a Test Driven Development approach. You can play the game [here](www.google.be)
+A React Web app made with a Test Driven Development approach. You can play the game [here](https://jolly-northcutt-c6310b.netlify.app/)
 ## Preview
 
 ![Tic Tac Toe](./preview.gif)
