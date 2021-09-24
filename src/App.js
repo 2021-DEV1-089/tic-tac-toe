@@ -1,10 +1,13 @@
 import React from 'react';
 import Game from './components/Game';
+import './App.css';
 
 const App = () => {
   return (
-    <div>
-      Tic-Tac-Toe
+    <div className='TTT' >
+      <header className='TTT-header'>
+        <h1>Tic-Tac-Toe</h1>
+      </header>
       <Game/>
     </div>
   )

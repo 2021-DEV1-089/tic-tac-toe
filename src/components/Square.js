@@ -1,19 +1,9 @@
 import React from 'react'
 
-const style = {
-    background: 'lightblue', 
-    border: '2px solid darkblue', 
-    fontSize: '30px', 
-    fontWeight: '800', 
-    cursor: 'pointer', 
-    outline: 'none',
-    width: '70px',
-    height: '70px',
-}
 
 const Square = ({value, onClick}) => {
     return (
-            <button onClick={onClick} style={style}> {value} </button>
+            <button className='square' onClick={onClick}> {value} </button>
     )
 }
 

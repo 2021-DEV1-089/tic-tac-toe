@@ -28,15 +28,17 @@ const Game = () => {
         const gameStatus=(_board) => {
             return _board.includes('X') || _board.includes('O') ? 'Reset Game' : 'Start Game'
         }
-        return <button onClick={()=>setBoard(Array(9).fill(null))}>{gameStatus(board)}</button>
+        return <button className='gameBtn' onClick={()=>setBoard(Array(9).fill(null))}>{gameStatus(board)}</button>
     }
     return (
         <>
-            <Board squares={board} onClick={handleClick}/>
-            <div>
+                    <h2 className='gameResult'>
             {winner ? 'Winner: ' + winner : 'Next Player: ' + (xIsNext ? 'X' : 'O' )}
+            </h2>
+            <Board className='board' squares={board} onClick={handleClick}/>
             {startGame()}
-            </div>
+
+
         </>
     )
 }
