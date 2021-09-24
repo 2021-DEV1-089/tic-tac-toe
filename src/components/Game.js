@@ -21,9 +21,22 @@ const Game = () => {
          setXIsNext(!xIsNext);  
 
     }
+
+    const startGame = () =>{
+
+        //Chek if game is already started 
+        const gameStatus=(_board) => {
+            return _board.includes('X') || _board.includes('O') ? 'Reset Game' : 'Start Game'
+        }
+        return <button onClick={()=>setBoard(Array(9).fill(null))}>{gameStatus(board)}</button>
+    }
     return (
         <>
             <Board squares={board} onClick={handleClick}/>
+            <div>
+            {winner ? 'Winner: ' + winner : 'Next Player: ' + (xIsNext ? 'X' : 'O' )}
+            {startGame()}
+            </div>
         </>
     )
 }
